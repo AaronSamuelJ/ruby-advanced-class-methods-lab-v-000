@@ -29,4 +29,9 @@ class Song
   def self.find_or_create_by_name(name)
     self.find_by_name(name) || self.create_by_name(name)
   end
+  def self.alphabetical
+    self.all.sort do |song_1, song_2|
+      song_1.name[0] <=> song_2.name[0]
+    end
+  end
 end

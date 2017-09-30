@@ -34,4 +34,12 @@ class Song
       song_1.name[0] <=> song_2.name[0]
     end
   end
+  def self.new_from_filename(filename)
+    song = Song.new 
+    arr = filename.split(" - ")[1]
+    song.artist = filename.split(" - ")[0]
+    song.name = arr.split(".")[0]
+    song
+    
+  end
 end

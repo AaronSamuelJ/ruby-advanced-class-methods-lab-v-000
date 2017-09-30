@@ -8,6 +8,6 @@ def reload!
   load './song.rb'
 end
 
-task :console do 
+task :console do
   Pry.start
 end

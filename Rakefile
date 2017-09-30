@@ -4,8 +4,8 @@ require 'pry'
 require 'rake'
 
 def reload!
-  load './artist.rb'
-  load './song.rb'
+  load './artist'
+  load './song'
 end
 
 task :console do

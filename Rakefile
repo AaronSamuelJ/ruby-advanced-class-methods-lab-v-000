@@ -1,11 +1,11 @@
-require_relative '../artist'
-require_relative '../song'
+require_relative './artist.rb'
+require_relative './song.rb'
 require 'pry'
 require 'rake'
 
 def reload!
-  load '../artist'
-  load '../song'
+  load './artist.rb'
+  load './song.rb'
 end
 
 task :console do
